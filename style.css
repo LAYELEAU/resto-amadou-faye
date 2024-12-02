@@ -1,0 +1,191 @@
+body{
+    background-color: #efeae0;
+width: 1200px;
+margin: auto;
+padding: 40px 0px;
+}
+/*header*/
+h1{
+    text-align: center;
+}
+.gros-texte{
+    color: #ba4b1d;
+    font-size: 130px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.prix-plat{
+    font-weight: bold;
+}
+
+.liste-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+    gap: 200px; 
+    width: 100%;
+}
+.menu-item{
+    padding: 12px;
+    text-align: center;
+    background-color: #d2a55a;
+    font-size: 40px;
+    border-radius: 20px;
+    width: 33.33%;
+}
+.plat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    width: 50%;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.image-plat{
+    width: 250;
+    height: 250px;
+    border-radius: 100%;
+}
+/* footer */
+ .boisson-dessert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 80px;
+}
+.dessert-item,.boisson-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+/*.dessert-prix,.boisson-prix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+.titre-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+}
+i{
+    padding: 0px;
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 60px;
+}
+table {
+    border-collapse: collapse; 
+  }
+  
+  td + td {
+    padding-left: 80px; 
+  }
+td{
+    padding: 8px;
+   
+}
+/*Paryie responsive*/
+@media screen and (max-width:1200px){
+    .gros-texte{font-size: 40px;}
+    body{padding: 8px 0px;
+        width: 768px;
+        margin: auto;
+    }
+    .liste-menu{display: flex;
+           flex-direction: column;
+           gap: 8px;
+           align-items: center;
+           padding: 20px 0px;
+    }
+    .plat,.box{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        width: 90%;
+        margin: auto;
+    }
+    .plat{
+        border: solid black 1px;
+        padding: 8px;
+    }
+    .description-prix{padding: 0px 20px;}
+    .boisson-dessert{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 0px;    
+    }
+    
+}
+@media screen and (max-width:992px){
+    .gros-texte{font-size: 40px;}
+    body{padding: 4px 0px;
+        width: 576px;
+        margin: auto;
+    }
+    .liste-menu{display: flex;
+           flex-direction: column;
+           gap: 8px;
+           align-items: center;
+           padding: 20px 0px;
+    }
+    .plat,.box{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 32px;
+        padding: 8px 0px ;  
+        
+    }
+    .plat{
+        border: solid black 1px;
+        box-shadow: 5px 5px 10px black;
+        padding: 8px;
+    }
+    .boisson-dessert{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 0px;
+        
+    }
+    a{font-size: 32px;}
+    .image-plat{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%
+    }
+    
+    
+}
